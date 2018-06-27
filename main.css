@@ -681,6 +681,9 @@ border-bottom: 1px solid #000;
 .bg {
     width: 100%;
     height: 100%;
+    -webkit-transform: rotate(-45deg) scale(1.45);
+    -moz-transform: rotate(-45deg) scale(1.45);
+    -o-transform: rotate(-45deg) scale(1.45);
     transform: rotate(-45deg) scale(1.45);
     transition: .5s;
 }
@@ -688,6 +691,9 @@ border-bottom: 1px solid #000;
 .bg:hover {
     width: 100%;
     height: 100%;
+    -webkit-transform: scale(1.45);
+    -moz-transform: scale(1.45);
+    -o-transform: scale(1.45);
     transform:  scale(1.45);
 }
 
@@ -695,10 +701,16 @@ border-bottom: 1px solid #000;
 .grid__img__1 .bg {
     background: url(img/bg1.jpg);
     background-size: cover;
+    -webkit-transform: rotate(-45deg) scale(1.2);
+    -moz-transform: rotate(-45deg) scale(1.2);
+    -o-transform: rotate(-45deg) scale(1.2);
     transform: rotate(-45deg) scale(1.2);
     }
 
 .grid__img__1 .bg:hover{
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
     transform: scale(1.2);
    }
 
