@@ -644,11 +644,17 @@ border-bottom: 1px solid #000;
     margin: -100px;
     overflow: hidden;
     opacity: .5;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
     }
 
 .grid > li:hover {
     opacity: 1;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
     transform: scale(1.2);
     z-index: 10;
     }
@@ -685,6 +691,9 @@ border-bottom: 1px solid #000;
     -moz-transform: rotate(-45deg) scale(1.45);
     -o-transform: rotate(-45deg) scale(1.45);
     transform: rotate(-45deg) scale(1.45);
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
 }
 
