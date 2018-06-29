@@ -20,9 +20,11 @@ $(document).ready(function(){
         }, 600)
     })
     
+//Loading ------------
+    
 setTimeout(function(){
  $('body').addClass('loaded');
- }, 2000);
+ }, 500);
     
     
 })
