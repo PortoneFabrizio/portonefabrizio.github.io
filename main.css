@@ -521,15 +521,6 @@ z-index: 9;
     z-index: 0;
 }
 
-.fixed{
-    position: fixed;
-    left: 0;
-    top: 50%;
-}
-
-.fixed img{
-    width: 100px;
-}
 
 /* ------ Section1 ------- */
 
@@ -645,8 +636,8 @@ z-index: 9;
 
 #lenity2 {
     width: 100%;
-    margin-top: 10px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 35px;
 }
 
 #sez1Len {
@@ -1036,7 +1027,7 @@ border-bottom: 1px solid #000;
     text-align: center;
 }
 
-.footer p:nth-child(2){
+.footer2 p:nth-child(2){
     bottom: 8px;
     position: relative;
 }
@@ -1049,6 +1040,10 @@ border-bottom: 1px solid #000;
     top: -5px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.line2{
+    border-top: 1.5px solid #000;
 }
 
 .email p{
