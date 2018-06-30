@@ -11,6 +11,10 @@ h2, h3, h4 {
     font-weight: 600;
 }
 
+strong{
+    font-weight: 600;
+}
+
 /* ------ Spinner Caricamento ------- */
 
 #loader-wrapper {
@@ -452,6 +456,38 @@ z-index: 9;
   color: white;
 }
 
+.icon-bar-len {
+  position: relative;
+
+}
+
+.icon-bar-len a {
+  text-align: center;
+  padding: 13px;
+  transition: all 0.3s ease;
+  color: #fff;
+  font-size: 32px;
+}
+
+.icon-bar-len a:hover {
+  background-color: #000;
+  color: rgba(0, 255, 20, 1);
+}
+
+.icon-bar-len .facebook {
+  background: #2E2D2C;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+}
+
+.icon-bar-len .instagram {
+  background: #2E2D2C;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: white;
+}
+
 /* ------ Cover ------- */
 
 .cover {
@@ -485,6 +521,16 @@ z-index: 9;
     z-index: 0;
 }
 
+.fixed{
+    position: fixed;
+    left: 0;
+    top: 50%;
+}
+
+.fixed img{
+    width: 100px;
+}
+
 /* ------ Section1 ------- */
 
 .section {
@@ -494,6 +540,10 @@ z-index: 9;
     margin-top: 20px;
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+#sectionlen {
+    height: 560px;
 }
 
 .section__container{
@@ -556,6 +606,57 @@ z-index: 9;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+#lenity {
+    box-sizing: border-box;
+    width: 44%;
+    height: 100%;
+    float:left;
+}
+
+#lenity .imgup {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+
+#lenity2 img {
+    position: relative;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+
+#lenity img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-100%);
+    width: 210px;
+    margin-bottom: 20px;
+    display: block;
+    transition: .6s;
+}
+
+#lenity2 {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+#sez1Len {
+    height: auto;
+}
+
+#lenity img:hover {
+    background-color: #fff;
+    width: 220px;
+    border-radius: 15px; 
 }
 
 .section__text {
@@ -623,6 +724,97 @@ border-bottom: 1px solid #000;
     padding-bottom: 60px;
 }
 
+.email2 p{
+    text-align: center;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.email2 {
+    background-color: #2E2D2C;
+    margin-top: -30px;
+}
+
+#btn-draw {
+  font-size: 2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: inline-block;
+  color: #fff;
+  border-bottom: 2px solid rgba(0, 255, 20, 1);
+  cursor: pointer;
+  overflow: hidden;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  margin-bottom: 80px;
+  margin-top: 30px;
+}
+
+#btn-draw:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 2px;
+  background: rgba(0, 255, 20, 1);
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  transition-delay: 0.6s;
+}
+#btn-draw > span {
+  position: relative;
+  display: block;
+  padding: 0.5em;
+  color: inherit;
+}
+#btn-draw > span:before, #btn-draw > span:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0, 255, 20, 1);
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+#btn-draw > span:before {
+  height: 2px;
+  width: 100%;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  transition-delay: 0.4s;
+}
+#btn-draw > span:after {
+  height: 100%;
+  width: 2px;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  transition-delay: 0.2s;
+}
+#btn-draw:hover:after, #btn-draw:hover > span:before, #btn-draw:hover > span:after {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+#btn-draw:hover:after {
+  transition-delay: 0s;
+}
+#btn-draw:hover > span:before {
+  transition-delay: 0.2s;
+}
+#btn-draw:hover > span:after {
+  transition-delay: 0.4s;
+}
+#btn-draw:hover {
+  color: #2E2D2C;
+  background-color: #fff;
+  transition-delay: 0.6s;
+}
 
 .section__portfolio {
     box-sizing: border-box;
@@ -843,6 +1035,12 @@ border-bottom: 1px solid #000;
 .footer{
     text-align: center;
 }
+
+.footer p:nth-child(2){
+    bottom: 8px;
+    position: relative;
+}
+
 
 .line{
     border-top: .5px solid #000;
